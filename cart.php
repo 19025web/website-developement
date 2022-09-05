@@ -16,7 +16,7 @@
 
   <div class="nav">
     <div class="logo">
-      <a href="index.php"><img src="images/logo.png" width="125px"></a>
+      <a href="index.php"><img src="images/logo.png" class="image" alt="Nicole Crafts Logo"></a>
     </div>
     <nav>
       <ul id="MenuItems">
@@ -53,7 +53,7 @@
             echo '<tr>';
             echo '<td>';
               echo '<div class="cart-information">';
-                echo '<img src=' . $row["image"] . '>';
+                echo '<img src="' . $row["image"] . '" alt="' . $row["productName"] . '">';
                 echo '<div>';
                   echo '<p>' . $row["productName"]. '</p>';
                   echo '<small>Price: $' . number_format((float)$row["price"], 2, '.', '') . '</small>';
@@ -61,58 +61,14 @@
               echo '</div>';
             echo '</td>';
 
-            echo '<td><input type="number" value="1"></td>';
-            echo '<td><p>Price: $' . number_format((float)$row["price"], 2, '.', '') . '</p></td>';
+            echo '<td><input type="number" value="0"></td>';
+            echo '<td><p>$' . number_format((float)$row["price"], 2, '.', '') . '</p></td>';
             echo '</tr>';
           }
         }
         }
       ?>
-    <tr>
-      <td>
-        <div class="cart-information">
-          <img src="images/crochet/dango.jpg">
-          <div>
-            <p>Dango</p>
-            <small>Price: $6.00</small>
-          </div>
-        </div>
-      </td>
-
-      <td><input type="number" value="1"></td>
-      <td>$6.00</td>
-    </tr>
-    <tr>
-
-      <td>
-        <div class="cart-information">
-          <img src="images/keychains/crane-in-a-jar.jpg">
-          <div>
-            <p>Crane in a Jar</p>
-            <small>Price: $3.00</small>
-          </div>
-        </div>
-      </td>
-
-      <td><input type="number" value="1"></td>
-      <td>$6.00</td>
-    </tr>
-    <tr>
-
-      <td>
-        <div class="cart-information">
-          <img src="images/jewellery/earrings.jpg">
-          <div>
-            <p>Feather Earrings</p>
-            <small>Price: $3.00</small>
-          </div>
-        </div>
-      </td>
-
-      <td><input type="number" value="1"></td>
-      <td>$6.00</td>
-    </tr>
-  </table>
+    </table>
 
     <div class="total-price">
       <table>
@@ -121,40 +77,45 @@
             <td>$25.00</td>
           </tr>
       </table>
-
-    </div>
-
+      </div>
+      <br>
+      <h3>Details</h3>
+      <form id="RegisterForm" method="POST" action="connect2.php">
+        <input type="text" placeholder="Name" name="name" required>
+        <input type="email" placeholder="Email" name="email" required>
+        <button type="submit" class="button" value="submit">Order &#8594;</button>
+    </form>
   </div>
 
 
-<!-- footer -->
-<div class="footer">
-  <div class="container">
-    <div class="row">
-      <div class="footer-column-1">
-        <img src="images/logo.png">
-      </div>
-      <div class="footer-column-2">
-        <h3>Useful Links</h3>
-        <ul>
-          <li>Coupons</li>
-          <li>Blog Post</li>
-          <li>Return Policy</li>
-          <li>Join Affiliate</li>
-        </ul>
-      </div>
-        <div class="footer-column-3">
-          <h3>Follow Us</h3>
+  <!-- footer -->
+  <div class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="footer-column-1">
+          <img src="images/logo.png" alt="Nicole Crafts Logo">
+        </div>
+        <div class="footer-column-2">
+          <h3>Useful Links</h3>
           <ul>
-            <li>Instagram</li>
-            <li>Youtube</li>
+            <li><a href="index.php">Home</a></li>
+            <li><a href="product.php">Products</a></li>
+            <li><a href="about.php">About</a></li>
+            <li><a href="account.php">Account</a></li>
           </ul>
+        </div>
+          <div class="footer-column-3">
+            <h3>Contact Us</h3>
+            <ul>
+              <li>Email: 19025.web@gmail.com</li>
+              <li>Phone: 022 458 9688</li>
+            </ul>
+        </div>
       </div>
+      <hr>
+      <p class="copyright">Copyright 2022 - Nicole Wong</p>
     </div>
-    <hr>
-    <p class="copyright">Copyright 2022 - Nicole Wong</p>
   </div>
-</div>
 
 <!-- js for toggle menu -->
 <script>

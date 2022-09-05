@@ -15,7 +15,7 @@
   <div class="container">
     <div class="nav">
       <div class="logo">
-        <a href="index.php"><img src="images/logo.png" width="125px"></a>
+        <a href="index.php"><img src="images/logo.png" class="logo" alt="Nicole Crafts Logo"></a>
       </div>
       <nav>
         <ul id="MenuItems">
@@ -36,7 +36,7 @@
         <a href="product.php" class="button">Shop Now &#8594;</a>
       </div>
       <div class="column-2">
-        <img src="images/octopi.png">
+        <img src="images/octopi.png" alt="Octopi">
       </div>
     </div>
   </div>
@@ -46,15 +46,15 @@
     <div class="small-container">
       <div class="row">
         <div class="inline-block-child">
-          <a href="product.html"><img src="images/crochet/dango.jpg"></a>
+          <a href="product.php"><img src="images/dango.jpg" alt="Dango"></a>
           <h3>Products</h3>
         </div>
         <div class="inline-block-child">
-          <a href="about.html"><img src="images/keychains/crane-in-a-jar.jpg"></a>
+          <a href="about.php"><img src="images/crane-in-a-jar.jpg" alt="Crane in a Jar"></a>
           <h3>About</h3>
         </div>
         <div class="inline-block-child">
-          <a href="contact.html"><img src="images/origami/pastel-stars.jpg"></a>
+          <a href="contact.php"><img src="images/pastel-stars.jpg" alt="Pastel Stars"></a>
           <h3>Contact Us</h3>
         </div>
       </div>
@@ -66,22 +66,22 @@
     <h2 class="title">Featured products</h2>
     <div class="row">
       <div class="inline-block-child">
-        <img src="images/crochet/dango.jpg">
+        <img src="images/dango.jpg" alt="Dango">
         <h4>Dango</h4>
         <p>$6.00</p>
       </div>
       <div class="inline-block-child">
-        <img src="images/jewellery/earrings.jpg">
+        <img src="images/earrings.jpg" alt="Earrings">
         <h4>Feather Earrings</h4>
         <p>$3.00</p>
       </div>
       <div class="inline-block-child">
-        <img src="images/keychains/crane-in-a-jar.jpg">
+        <img src="images/crane-in-a-jar.jpg" alt="Crane in a Jar">
         <h4>Crane in a Jar</h4>
         <p>$3.00</p>
       </div>
       <div class="inline-block-child">
-        <img src="images/origami/pastel-stars.jpg">
+        <img src="images/pastel-stars.jpg" alt="Pastel Stars">
         <h4>Pastel Stars</h4>
         <div class="rating">
         <p>$4.00</p>
@@ -91,41 +91,40 @@
     <h2 class="title">Latest Products</h2>
     <div class="row">
       <div class="inline-block-child">
-        <img src="images/origami/boats.jpg">
+        <img src="images/boats.jpg" alt="Boats">
         <h4>Paper Boats</h4>
         <p>$4.00</p>
       </div>
       <div class="inline-block-child">
-        <img src="images/needle-felt/chicken.jpg">
+        <img src="images/chicken.jpg" alt="Chicken">
         <h4>Chicken</h4>
         <p>$3.00</p>
       </div>
       <div class="inline-block-child">
-        <img src="images/crochet/blue-dino.jpg">
+        <img src="images/blue-dino.jpg" alt="Blue Triceratops">
         <h4>Blue Triceratops</h4>
         <p>$5.00</p>
       </div>
       <div class="inline-block-child">
-        <img src="images/crochet/pink-dino.jpg">
+        <img src="images/pink-dino.jpg" alt="Pink Triceratops">
         <h4>Pink Triceratops</h4>
         <p>$5.00</p>
       </div>
     </div>
   </div>
-</div>
 
   <!-- offer -->
   <div class="offer">
     <div class="small-container">
       <div class="row">
         <div class="column-2">
-          <img src="images/keychains/cherries.jpg" class="offer-img">
+          <img src="images/big-cherry.jpg" class="offer-img" alt="Big Cherry Keychain">
         </div>
         <div class="column-2">
           <p>Exclusively Availiable on Nicole Crafts</p>
-          <h1>Beaded Cherry Keychain & Charm</h1>
-          <small>Includes 1 beaded cherry keychain and 1 small beaded cherry charm<br></small>
-          <a href="product-details.html" class="button">Buy Now &#8594;</a>
+          <h1>Beaded Cherry Keychain</h1>
+          <small>Includes 1 beaded cherry keychain<br></small>
+          <a href="products.html" class="button">Buy Now &#8594;</a>
       </div>
     </div>
   </div>
@@ -136,15 +135,15 @@
   <div class="container">
     <div class="row">
       <div class="footer-column-1">
-        <img src="images/logo.png">
+        <img src="images/logo.png" alt="Nicole Crafts Logo">
       </div>
       <div class="footer-column-2">
         <h3>Useful Links</h3>
         <ul>
-          <a href="index.html"><li>Home</li></a>
-          <a href="product.html"><li>Products</li></a>
-          <a href="about.html"><li>About</li></a>
-          <a href="account.html"><li>Account</li></a>
+          <li><a href="index.php">Home</a></li>
+          <li><a href="product.php">Products</a></li>
+          <li><a href="about.php">About</a></li>
+          <li><a href="account.php">Account</a></li>
         </ul>
       </div>
         <div class="footer-column-3">

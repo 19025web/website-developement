@@ -30,34 +30,12 @@
     </nav>
   </div>
 </div>
-  <!-- products -->
-     <div class="small-container">
 
-       <div class="row row-2">
-         <h2>All Products</h2>
-       </div>
-
-       <?php
-         require_once 'connect.php';
-
-         $sql = "SELECT * FROM products"; // get information on rows from table 'products'
-         $result = $conn->query($sql);
-         if($result){
-         if($result->num_rows > 0){
-
-             echo '<div class="row">';
-           while($row = $result->fetch_assoc()){
-               echo '<div class="inline-block-child">';
-                 echo '<img src="' . $row["image"] . '" alt="' . $row["productName"] . '">';
-                 echo '<h4>' . $row["productName"]. '</h4>';
-                 echo '<p>Price: $' . number_format((float)$row["price"], 2, '.', '') . '</p>';
-               echo '</div>';
-           }
-             echo '</div>'; // row
-         }
-         }
-       ?>
-     </div>
+<div class="small-container box">
+  <h3>Order Successful.</h3>
+  <br>
+  <p>Thank you for your order. You will be contacted for further details via email.</p>
+</div>
 
 <!-- footer -->
 <div class="footer">
@@ -75,13 +53,14 @@
           <li><a href="account.php">Account</a></li>
         </ul>
       </div>
-        <div class="footer-column-3">
-          <h3>Follow Us</h3>
-          <ul>
-            <li>Instagram</li>
-            <li>Youtube</li>
-          </ul>
-      </div>
+      <div class="footer-column-3">
+        <h3>Contact Us</h3>
+        <ul>
+          <li>Email: 19025.web@gmail.com</li>
+          <li>Phone: 022 458 9688</li>
+        </ul>
+    </div>
+
     </div>
     <hr>
     <p class="copyright">Copyright 2022 - Nicole Wong</p>

@@ -16,7 +16,7 @@
 
   <div class="nav">
     <div class="logo">
-      <a href="index.php"><img src="images/logo.png" width="125px"></a>
+      <a href="index.php"><img src="images/logo.png" class="image" alt="Nicole Crafts Logo"></a>
     </div>
     <nav>
       <ul id="MenuItems">
@@ -37,7 +37,7 @@
     <h2>About</h2>
     <div class="row">
       <div class="column-2">
-        <img src="images/octopi.png">
+        <img src="images/octopi.png" alt="Octopi">
       </div>
       <div class="column-2">
         <p>This website sells handmade products by Nicole. We sell things like crochet plushies, keychains, origami stars, and beaded things.</p>
@@ -53,24 +53,25 @@
   <div class="container">
     <div class="row">
       <div class="footer-column-1">
-        <img src="images/logo.png">
+        <img src="images/logo.png" alt="Nicole Crafts Logo">
       </div>
       <div class="footer-column-2">
         <h3>Useful Links</h3>
         <ul>
-          <a href="index.html"><li>Home</li></a>
-          <a href="product.html"><li>Products</li></a>
-          <a href="about.html"><li>About</li></a>
-          <a href="account.html"><li>Account</li></a>
+          <li><a href="index.php">Home</a></li>
+          <li><a href="product.php">Products</a></li>
+          <li><a href="about.php">About</a></li>
+          <li><a href="account.php">Account</a></li>
         </ul>
       </div>
-        <div class="footer-column-3">
-          <h3>Follow Us</h3>
-          <ul>
-            <li>Instagram</li>
-            <li>Youtube</li>
-          </ul>
-      </div>
+      <div class="footer-column-3">
+        <h3>Contact Us</h3>
+        <ul>
+          <li>Email: 19025.web@gmail.com</li>
+          <li>Phone: 022 458 9688</li>
+        </ul>
+    </div>
+
     </div>
     <hr>
     <p class="copyright">Copyright 2022 - Nicole Wong</p>
